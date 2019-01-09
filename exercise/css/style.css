@@ -1,7 +1,10 @@
 body {
     margin-top: 50px;
     background-color:#eaf0f7;
-    mar
+    text-align: center;
+}
+.form-control{a
+    margin: 0 auto;
 }
 .card{
     margin-bottom: 20px; 
@@ -10,3 +13,24 @@ body {
 .margin-center{
     margin: 0 auto;
 }
+.btn-coin1{
+    padding: 25px 32px;
+    border-radius: 50%;
+    background-color: silver;
+}
+.btn-coin2{
+    padding: 30px 37px;
+    border-radius: 50%;
+    background-color: burlywood;
+}
+.btn-coin5{
+    padding:35px 41px;
+    border-radius: 50%;
+    background-color: silver;
+}
+.btn-coin10{
+    padding: 40px 46px;
+    border-radius: 50%;
+    background-color:gold;
+}
+---------------
