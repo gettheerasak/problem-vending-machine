@@ -57,24 +57,50 @@
           </div>
         </div>
         <?php } ?>
-        
 
-        
-
-          <div class=" col-12 margin-bot"> 
-          <H3 class="text-muted">
-              Please enter the coin before choosing the products.
-          </h3>
+          <div class=" col-12 margin-bot "> 
+            <h3 class="text-muted">
+                Please enter the coin before choosing the products.
+            </h3> <br>
+            <form action="layout.php" method="get">
+              <button type="submit" name="coin" class="btn btn-secondary btn-coin1" value=1 >1</button>
+              <button type="submit" name="coin" class="btn btn-secondary btn-coin2" value=2 >2</button>
+              <button type="submit" name="coin" class="btn btn-secondary btn-coin5" value=5  >5</button>
+              <button type="submit" name="coin" class="btn btn-secondary btn-coin10" value=10 >10</button>
+              <?php
+                if(isset($_GET['coin']))
+                {
+                  $coin=$_GET['coin']; 
+                }
+                else{
+                  $coin="";
+                } 
+              ?>
+              <div class="col">
+                <label for="text">Your coins</label>
+                <input type="text" class="form-control" id="coin" style="width: 200px;" disabled value="<?php echo $coin ?>" >
+                
+                <small id="emailHelp" class="form-text text-muted">ใส่ได้ทีละ 1 coin จากนั้นกด submit</small> <br>
+                <button type="submit" class="btn btn-primary " >Submit</button> 
+              </div>
+            </form>
           </div>
+                
+          <div class="col">
+            <form  method="get">
+               <br>
+               Sum coins <input type="text" class="form-control" id="coin" style="width: 200px;" disabled value="<?php  ?>" >
+            </form>
+          </div>
+          
+  
       </div>
-        
+      <footer>
+        <br>
+      </footer>
+  </div>
+
       
 
-
-
-
-
-  </div>
-        
 </body>
 </html>
